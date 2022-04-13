@@ -1,0 +1,90 @@
+.why{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.why-background {
+
+      background-image: url(../images/Untitled-design.png); 
+      background-attachment:fixed;
+      width: 100%;
+      min-height: 470px;
+      background-size: cover;
+      position: relative;
+
+    .test-why {
+        position: absolute;   
+    }
+
+}
+
+.row{
+    display: flex;
+    padding-top: 30px;
+
+    p{
+        color:#777;
+        font-size: 15px;
+        font-weight: 300; 
+        padding-top: 20px;
+    }
+
+        .reason{
+            margin: 0px 20px;
+            flex-basis: 30%;
+            background-color: #fff3f3;
+            border-radius: 10px;
+            padding: 15px 10px;
+            margin-bottom: 60px;
+            transition: 0.5s;
+            height: 250px;
+
+            &:hover{
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.425);
+            }
+
+       }
+       
+}
+@media( max-width :320px){
+    
+    .why-background {
+        height: 1000px;
+    }
+
+    .row .reason {
+        margin: 0px 10px;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (min-width: 320px) and ( max-width :720px){
+
+    .row{
+        flex-direction: column;
+    }
+
+    .why {
+        padding-top: 0px;
+    }
+    .why-background {
+      min-height: 1000px;
+    }
+
+}
+
+
+@media(min-width:720px) and ( max-width :800px){
+
+    .why-background {
+      min-height: 520px;
+    }
+
+    .row .reason{  
+        height: 345px;
+
+    }
+
+}

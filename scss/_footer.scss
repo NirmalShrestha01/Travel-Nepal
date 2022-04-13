@@ -1,0 +1,125 @@
+
+.contact-form{
+    max-width: 700px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    h1{
+        font-size: 30px;
+        color: #1b20219a;
+    }
+    
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+
+    ::placeholder{
+        color: #fff;
+        opacity: 1;
+        font-size: 15px;
+
+    }
+    
+
+    input{
+        margin: 20px 0px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #fff;
+        
+
+        
+    
+    }
+    textarea{
+        margin: 20px 0px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+}
+.btn{
+    background-color: $btn-color;
+    width: 15%;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    a{
+        text-decoration: none;
+        color: #777 !important;
+        
+    }
+
+    &:hover{
+        background-color: $hover-color;
+    }
+}
+
+
+
+
+.footerpage{
+    text-align: center;
+    background-image: linear-gradient(rgba(167, 41, 41, 0.596),rgba(167, 40, 40, 0.61)), url(../images/postervid.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    h3{
+        color: #fff;
+        font-size: 25px;
+        margin-left: -1%;
+    }
+    p{
+        color: #fff;
+        letter-spacing: 1px ;
+        margin-top: 5px;
+    }
+    a{
+        color: #fff;
+    }
+
+    .social-links{
+        color: #fff;
+        margin-top: 10px;
+
+        .fa{
+            letter-spacing: 18px;
+        }
+       
+    }
+}
+
+
+
+@media( max-width :320px),
+(min-width: 320px) and ( max-width :720px){
+    
+    .footerpage .btn {
+        width: 30%;
+    }
+
+}
+
+
+
+
+
+
+  

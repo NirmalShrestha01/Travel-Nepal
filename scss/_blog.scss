@@ -1,0 +1,123 @@
+.blog{
+    
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+    .blog-col{
+            flex-basis: 32%;
+            border-radius: 10px;     
+            background-color:#fff3f3;
+            text-align: left;
+            height: 550px;
+            position: relative;
+            
+
+            img{
+                &:hover{
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.614);
+                }
+                width: 100%;
+                display: block;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            h3{
+                padding: 10px;
+
+            }
+            p{
+                text-align: justify;
+                padding: 0pc 10px;
+
+            }
+            a{
+                position: absolute;
+                text-decoration: none;
+                padding: 10px;
+                align-items: center;
+                
+    
+
+                &:hover{
+                    background-color: $hover-color;
+                    color: #777;
+
+                }
+                
+            }
+            .blog-button{
+                border: 1px solid rgba(0, 0, 0, 0.589);
+                border-radius: 10px;
+                margin:10px 0 0 10px
+            }
+            
+            
+    }
+    
+}
+
+
+@media( max-width :320px){
+    
+     .row .blog-col {
+        margin-bottom: 40px;
+        min-height: 550px;
+
+        a {
+            color: #777;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+      
+       
+    }
+
+
+}
+
+
+@media (min-width: 320px) and ( max-width :720px){
+
+    .row .blog-col {
+        margin-bottom: 40px;
+        min-height: 550px;
+
+        a {
+            color: #777;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+      
+       
+    }
+
+}
+
+
+@media(min-width:720px) and ( max-width :800px){
+
+    .row .blog-col {
+        margin-bottom: 40px;
+        min-height: 620px;
+
+        a {
+            color: #777;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        } 
+    }
+
+}
+
+
+
